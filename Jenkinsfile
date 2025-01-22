@@ -1,3 +1,6 @@
+tools {
+    maven 'Maven 3.8.7'
+}
 pipeline {
     agent none
     stages {
