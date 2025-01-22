@@ -1,10 +1,5 @@
 pipeline {
     agent none
-    
-    tools {
-        maven 'maven 3.8.7'  // Spécification de la version de Maven à utiliser
-    }
-
     stages {
         stage('Check Maven Path') {
             agent any
