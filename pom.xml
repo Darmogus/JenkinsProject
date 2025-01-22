@@ -19,20 +19,16 @@
 
   <build>
     <plugins>
-      <!-- Plugin Maven SonarQube -->
       <plugin>
         <groupId>org.sonarsource.scanner.maven</groupId>
         <artifactId>sonar-maven-plugin</artifactId>
-        <version>3.9.1.2184</version> <!-- Vérifiez la dernière version disponible -->
+        <version>3.9.1.2184</version>
       </plugin>
     </plugins>
   </build>
 
   <properties>
-    <!-- Paramètres pour SonarQube -->
     <sonar.projectKey>mon-projet</sonar.projectKey>
     <sonar.host.url>http://192.168.56.1:9000</sonar.host.url>
-    <sonar.login>${sonar.login}</sonar.login>
-    <sonar.sources>.</sonar.sources> <!-- Assure l'analyse de tous les fichiers -->
   </properties>
 </project>
