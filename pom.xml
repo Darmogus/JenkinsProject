@@ -15,4 +15,7 @@
       <scope>test</scope>
     </dependency>
   </dependencies>
+  <properties>
+    <sonar.sources>.</sonar.sources>
+  <properties>
 </project>
