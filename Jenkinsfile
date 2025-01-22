@@ -17,7 +17,13 @@ pipeline {
                 SONAR_AUTH_TOKEN = credentials('sonarqube')
             }
             steps {
-                sh 'mvn sonar:sonar -Dsonar.projectKey=sample_project -Dsonar.host.url=$SONAR_HOST_URL -Dsonar.login=$SONAR_AUTH_TOKEN'
+                // Commande Maven pour SonarQube sans spécifier de sous-dossiers
+                sh '''
+                mvn sonar:sonar \
+                    -Dsonar.projectKey=sample_project \
+                    -Dsonar.host.url=$SONAR_HOST_URL \
+                    -Dsonar.login=$SONAR_AUTH_TOKEN
+                '''
             }
         }
     }
