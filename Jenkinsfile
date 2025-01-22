@@ -2,7 +2,7 @@ pipeline {
     agent none
     
     tools {
-        maven 'MavenTool 3.8.7'  // Spécification de la version de Maven à utiliser
+        maven 'maven 3.8.7'  // Spécification de la version de Maven à utiliser
     }
 
     stages {
