@@ -30,5 +30,7 @@
   <properties>
     <sonar.projectKey>mon-projet</sonar.projectKey>
     <sonar.host.url>http://192.168.56.1:9000</sonar.host.url>
+    <sonar.sources>.</sonar.sources>
+    <sonar.inclusions>**/*.*</sonar.inclusions>
   </properties>
 </project>
