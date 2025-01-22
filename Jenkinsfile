@@ -7,6 +7,7 @@ pipeline {
     stages {
         stage('Building Application') {
             steps {
+                echo 'Building Application'
                 sh 'mvn compile'
             }
         }
@@ -18,6 +19,7 @@ pipeline {
             }
             steps {
                 // Commande Maven pour SonarQube sans spécifier de sous-dossiers
+                echo 'Sonarqube analysis'
                 sh '''
                 mvn sonar:sonar \
                     -Dsonar.projectKey=sample_project \
